@@ -21,7 +21,7 @@ public class FibonacciTest3 {
 		input = new int[numberOfLoops];
 		Random random = new Random();
 		for (int i = 0; i < numberOfLoops; i++) {
-			input[i] = random.nextInt(100);
+			input[i] = random.nextInt(50);
 		}
 	}
 
