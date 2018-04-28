@@ -2,3 +2,4 @@ microbenchmark/.classpath
 microbenchmark/.project
 microbenchmark/.settings/
 microbenchmark/target/
+microbenchmark/target/*
