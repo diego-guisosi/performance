@@ -1,4 +1,4 @@
-package microbenchmark;
+package microbenchmark.fibonacci;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,8 @@ import java.util.Random;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import microbenchmark.fibonacci.FibonacciCalculator;
 
 /*
  * Microbenchmarks must not include extraneous operations. Since the element

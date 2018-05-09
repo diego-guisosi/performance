@@ -1,4 +1,4 @@
-package microbenchmark;
+package microbenchmark.fibonacci;
 
 public class FibonacciCalculator {
 

@@ -1,0 +1,33 @@
+[Intel I7 7700 HQ - 16 GB RAM - 256 GB SSD]
+[ForEachEnhanced]
+Elapsed time: 471 ms
+Elapsed time: 452 ms
+Elapsed time: 485 ms
+Elapsed time: 467 ms
+Elapsed time: 455 ms
+Elapsed time: 476 ms
+
+[ForEachStreamFilter]
+Elapsed time: 434 ms
+Elapsed time: 449 ms
+Elapsed time: 488 ms
+Elapsed time: 447 ms
+Elapsed time: 427 ms
+Elapsed time: 453 ms
+
+[ForEachStream]
+Elapsed time: 458 ms
+Elapsed time: 442 ms
+Elapsed time: 439 ms
+Elapsed time: 453 ms
+Elapsed time: 435 ms
+Elapsed time: 436 ms
+
+[ForEachIterable]
+Elapsed time: 428 ms
+Elapsed time: 434 ms
+Elapsed time: 396 ms
+Elapsed time: 448 ms
+Elapsed time: 437 ms
+Elapsed time: 422 ms
+

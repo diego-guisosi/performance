@@ -1,7 +1,9 @@
-package microbenchmark;
+package microbenchmark.longsummer;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import microbenchmark.longsummer.LongSummer;
 
 public class LongSummerBenchmarkTest {
 

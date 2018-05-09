@@ -1,4 +1,4 @@
-package microbenchmark;
+package microbenchmark.longsummer;
 
 public class LongSummer {
 
