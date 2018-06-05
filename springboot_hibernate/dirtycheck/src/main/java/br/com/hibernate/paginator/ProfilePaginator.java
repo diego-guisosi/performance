@@ -1,4 +1,4 @@
-package br.com.hibernate.workflow;
+package br.com.hibernate.paginator;
 
 import java.util.List;
 import java.util.function.Function;
