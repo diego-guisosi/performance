@@ -1,5 +1,5 @@
-microbenchmark/.classpath
-microbenchmark/.project
-microbenchmark/.settings/
-microbenchmark/target/
-microbenchmark/target/*
+**/.classpath
+**/.project
+**/.settings/
+**/target/
+**/target/*
