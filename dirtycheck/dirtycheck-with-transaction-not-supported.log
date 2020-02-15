@@ -1,0 +1,889 @@
+21:34:59.110 [main] INFO  br.com.hibernate.Main - Starting Main on dixy-Inspiron-15-7000-Gaming with PID 5883 (/home/dixy/workspace/sts-3.9.2.RELEASE/dirtycheck/target/classes started by dixy in /home/dixy/workspace/sts-3.9.2.RELEASE/dirtycheck)
+21:34:59.113 [main] INFO  br.com.hibernate.Main - No active profile set, falling back to default profiles: default
+21:34:59.151 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Mon Jun 04 21:34:59 BRT 2018]; root of context hierarchy
+21:34:59.913 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:34:59.916 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=org.apache.derby.jdbc.ClientDriver was not found, trying direct instantiation.
+21:35:00.038 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: getNetworkTimeout.)
+21:35:00.069 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:35:00.108 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+21:35:00.123 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21:35:00.179 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+21:35:00.181 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:35:00.211 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+21:35:00.310 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+21:35:00.678 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:35:00.763 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+21:35:00.812 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:00.813 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+21:35:00.814 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:00.832 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+21:35:00.833 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:00.856 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+21:35:00.856 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:00.876 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+21:35:00.878 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:00.888 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+21:35:00.959 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'br.com.hibernate.service.ProfileService.findProfilesWithTransactionRequired' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+21:35:00.968 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'br.com.hibernate.service.ProfileService.findProfilesWithTransactionNotSupported' with attribute: PROPAGATION_NOT_SUPPORTED,ISOLATION_DEFAULT; ''
+21:35:00.976 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'br.com.hibernate.workflow.ProfilePaginator.paginateWithTransactionNotSupported' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+21:35:00.977 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'br.com.hibernate.workflow.ProfilePaginator.paginateWithSameTransactionRequired' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+21:35:01.126 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+21:35:01.127 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+21:35:01.130 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+21:35:01.139 [main] INFO  br.com.hibernate.Main - Started Main in 2.233 seconds (JVM running for 2.866)
+21:35:01.144 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [br.com.hibernate.workflow.ProfilePaginator.paginateWithTransactionNotSupported]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+21:35:01.144 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Opened new EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.148 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@f5ce0bb]
+21:35:01.153 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.154 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.155 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.159 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 0, size 5000, sort: UNSORTED]
+21:35:01.164 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.165 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.297 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.297 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.300 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.300 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.300 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.300 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.300 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.300 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 1, size 5000, sort: UNSORTED]
+21:35:01.301 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.301 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.354 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.355 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.357 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.358 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.358 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.358 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.358 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.358 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 2, size 5000, sort: UNSORTED]
+21:35:01.359 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.360 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.436 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.436 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.439 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.439 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.439 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.439 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.439 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.439 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 3, size 5000, sort: UNSORTED]
+21:35:01.440 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.440 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.505 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.505 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.508 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.508 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.508 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.509 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 4, size 5000, sort: UNSORTED]
+21:35:01.509 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.510 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.575 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.576 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.578 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.578 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.578 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.578 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.578 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.578 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 5, size 5000, sort: UNSORTED]
+21:35:01.579 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.579 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.633 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.633 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.635 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.635 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.635 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.635 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.636 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.636 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 6, size 5000, sort: UNSORTED]
+21:35:01.636 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.636 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.685 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.685 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.687 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.687 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.688 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.688 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.688 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.688 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 7, size 5000, sort: UNSORTED]
+21:35:01.688 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.689 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.724 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.725 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.727 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.728 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.728 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.728 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.728 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.728 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 8, size 5000, sort: UNSORTED]
+21:35:01.728 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.728 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.763 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.763 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.764 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.765 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.765 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.765 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.765 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.765 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 9, size 5000, sort: UNSORTED]
+21:35:01.765 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.766 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.796 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.796 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.798 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.798 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.798 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.798 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.798 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.798 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 10, size 5000, sort: UNSORTED]
+21:35:01.799 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.799 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.829 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.829 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.832 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.832 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.832 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.832 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.832 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.832 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 11, size 5000, sort: UNSORTED]
+21:35:01.833 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.833 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.874 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.874 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.875 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.875 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.875 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.875 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.875 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.875 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 12, size 5000, sort: UNSORTED]
+21:35:01.876 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.876 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.909 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.909 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.911 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.911 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.911 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.911 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.911 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.911 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 13, size 5000, sort: UNSORTED]
+21:35:01.911 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.912 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.943 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.943 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.944 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.944 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.944 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.944 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.944 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.944 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 14, size 5000, sort: UNSORTED]
+21:35:01.945 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.945 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:01.974 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:01.974 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:01.975 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:01.975 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:01.975 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:01.975 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:01.976 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:01.976 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 15, size 5000, sort: UNSORTED]
+21:35:01.976 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:01.976 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.007 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.007 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.009 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.009 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.009 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.009 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.009 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.009 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 16, size 5000, sort: UNSORTED]
+21:35:02.009 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.010 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.041 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.042 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.043 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.043 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.043 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.043 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.043 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.043 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 17, size 5000, sort: UNSORTED]
+21:35:02.044 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.044 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.072 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.072 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.073 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.073 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.073 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.073 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.074 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.074 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 18, size 5000, sort: UNSORTED]
+21:35:02.074 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.074 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.110 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.110 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.112 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.112 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.112 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.112 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.112 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.112 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 19, size 5000, sort: UNSORTED]
+21:35:02.113 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.113 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.159 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.159 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.160 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.160 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.160 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.160 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.160 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.160 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 20, size 5000, sort: UNSORTED]
+21:35:02.160 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.161 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.212 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.212 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.213 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.213 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.213 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.213 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.213 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.213 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 21, size 5000, sort: UNSORTED]
+21:35:02.214 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.214 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.258 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.258 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.259 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.259 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.259 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.260 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.260 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.260 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 22, size 5000, sort: UNSORTED]
+21:35:02.260 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.260 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.291 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.291 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.292 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.292 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.292 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.293 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.293 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.293 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 23, size 5000, sort: UNSORTED]
+21:35:02.293 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.293 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.330 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.330 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.331 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.332 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.332 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.332 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.332 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.332 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 24, size 5000, sort: UNSORTED]
+21:35:02.332 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.333 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.365 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.365 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.366 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.366 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.366 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.366 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.366 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.366 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 25, size 5000, sort: UNSORTED]
+21:35:02.366 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.367 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.399 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.399 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.401 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.401 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.401 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.401 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.401 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.401 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 26, size 5000, sort: UNSORTED]
+21:35:02.401 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.402 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.434 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.434 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.435 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.435 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.435 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.435 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.435 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.435 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 27, size 5000, sort: UNSORTED]
+21:35:02.435 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.435 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.469 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.469 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.470 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.470 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.470 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.470 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.470 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.470 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 28, size 5000, sort: UNSORTED]
+21:35:02.470 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.470 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.507 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.508 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.509 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.509 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.509 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.509 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 29, size 5000, sort: UNSORTED]
+21:35:02.510 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.510 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.544 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.545 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.546 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.546 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.546 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.546 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.546 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.546 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 30, size 5000, sort: UNSORTED]
+21:35:02.547 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.547 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.581 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.581 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.582 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.582 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.582 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.582 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.582 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.582 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 31, size 5000, sort: UNSORTED]
+21:35:02.583 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.583 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.623 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.623 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.623 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.623 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.623 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.623 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.623 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.624 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 32, size 5000, sort: UNSORTED]
+21:35:02.624 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.624 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.666 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.666 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.666 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.666 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.666 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.666 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.667 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.667 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 33, size 5000, sort: UNSORTED]
+21:35:02.667 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.667 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.705 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.705 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.706 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.706 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.706 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.706 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.706 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.706 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 34, size 5000, sort: UNSORTED]
+21:35:02.706 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.706 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.744 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.744 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.745 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.745 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.745 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.745 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.745 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.745 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 35, size 5000, sort: UNSORTED]
+21:35:02.745 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.746 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.784 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.784 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.785 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.785 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.785 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.785 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.785 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.785 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 36, size 5000, sort: UNSORTED]
+21:35:02.785 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.786 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.826 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.827 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.827 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.827 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.827 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.828 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.828 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.828 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 37, size 5000, sort: UNSORTED]
+21:35:02.828 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.828 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.869 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.869 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.870 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.870 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.870 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.870 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.870 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.870 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 38, size 5000, sort: UNSORTED]
+21:35:02.871 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.871 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.913 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.913 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.914 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.914 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.914 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.914 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.914 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.914 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 39, size 5000, sort: UNSORTED]
+21:35:02.914 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.915 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:02.960 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:02.960 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:02.960 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:02.961 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:02.961 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:02.961 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:02.961 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:02.961 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 40, size 5000, sort: UNSORTED]
+21:35:02.961 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:02.961 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.002 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.002 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.002 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.002 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.002 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.002 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.003 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.003 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 41, size 5000, sort: UNSORTED]
+21:35:03.003 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.003 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.049 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.049 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.050 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.050 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.050 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 42, size 5000, sort: UNSORTED]
+21:35:03.051 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.051 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.099 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.100 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.100 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.100 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.100 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.100 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.100 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.100 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 43, size 5000, sort: UNSORTED]
+21:35:03.101 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.101 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.147 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.147 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.147 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.147 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.147 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.147 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.147 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.147 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 44, size 5000, sort: UNSORTED]
+21:35:03.148 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.148 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.193 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.193 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.194 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.194 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.194 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.194 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.194 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.194 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 45, size 5000, sort: UNSORTED]
+21:35:03.194 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.194 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.245 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.245 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.246 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.246 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.246 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.246 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.246 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.246 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 46, size 5000, sort: UNSORTED]
+21:35:03.246 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.246 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.293 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.294 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.294 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.294 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.294 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.294 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.294 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.294 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 47, size 5000, sort: UNSORTED]
+21:35:03.294 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.295 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.343 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.344 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.344 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.344 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.344 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.344 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.344 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.344 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 48, size 5000, sort: UNSORTED]
+21:35:03.345 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.345 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.397 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.397 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.397 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.397 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.397 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.397 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.397 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.397 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 49, size 5000, sort: UNSORTED]
+21:35:03.398 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.398 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.449 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.449 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.449 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.449 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.449 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.449 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.449 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.449 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 50, size 5000, sort: UNSORTED]
+21:35:03.450 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.450 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.501 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.501 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.501 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.501 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.501 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.501 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.502 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.502 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 51, size 5000, sort: UNSORTED]
+21:35:03.502 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.502 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.559 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.559 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.560 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.560 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.560 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.560 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.560 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.560 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 52, size 5000, sort: UNSORTED]
+21:35:03.560 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.561 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.615 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.615 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.615 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.615 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.615 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.615 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.615 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.615 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 53, size 5000, sort: UNSORTED]
+21:35:03.616 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.616 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.671 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.671 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.672 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.672 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.672 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.672 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.672 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.672 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 54, size 5000, sort: UNSORTED]
+21:35:03.673 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.673 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.730 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.730 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.731 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.731 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.731 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.731 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.731 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.731 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 55, size 5000, sort: UNSORTED]
+21:35:03.731 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.732 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.787 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.787 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.788 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.788 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.788 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.788 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.788 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.788 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 56, size 5000, sort: UNSORTED]
+21:35:03.788 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.789 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.844 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.844 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.844 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.844 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.844 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.844 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.845 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.845 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 57, size 5000, sort: UNSORTED]
+21:35:03.845 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.845 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.906 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.906 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.907 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.907 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.907 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.907 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.907 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.907 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 58, size 5000, sort: UNSORTED]
+21:35:03.907 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.908 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:03.967 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:03.967 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:03.967 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:03.967 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:03.968 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:03.968 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:03.968 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:03.968 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 59, size 5000, sort: UNSORTED]
+21:35:03.968 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:03.968 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.028 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.028 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.028 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.029 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.029 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.029 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.029 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.029 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 60, size 5000, sort: UNSORTED]
+21:35:04.029 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.029 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.088 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.089 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.089 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.089 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.089 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.089 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.089 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.089 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 61, size 5000, sort: UNSORTED]
+21:35:04.090 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.090 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.155 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.155 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.156 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.156 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.156 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.156 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.156 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.156 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 62, size 5000, sort: UNSORTED]
+21:35:04.156 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.156 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.219 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.219 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.220 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.220 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.220 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.220 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.220 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.220 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 63, size 5000, sort: UNSORTED]
+21:35:04.221 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.221 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.283 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.283 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.283 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.284 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.284 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.284 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.284 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.284 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 64, size 5000, sort: UNSORTED]
+21:35:04.284 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.284 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.350 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.350 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.350 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.350 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.350 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.351 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.351 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.351 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 65, size 5000, sort: UNSORTED]
+21:35:04.351 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.351 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.420 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.420 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.421 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.421 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.421 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.421 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.421 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.421 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 66, size 5000, sort: UNSORTED]
+21:35:04.421 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.422 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.487 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.487 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.488 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.488 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.488 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.488 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.488 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.488 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 67, size 5000, sort: UNSORTED]
+21:35:04.488 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.488 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.558 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.558 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.559 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.559 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.559 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.559 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.559 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.559 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 68, size 5000, sort: UNSORTED]
+21:35:04.559 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.559 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.627 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.627 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.628 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.628 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.628 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.628 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.628 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.628 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 69, size 5000, sort: UNSORTED]
+21:35:04.628 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.628 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.697 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.698 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.698 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.698 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.698 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.698 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.698 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.699 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 70, size 5000, sort: UNSORTED]
+21:35:04.699 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.699 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.766 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.766 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.767 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.767 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.767 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.767 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.767 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.767 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 71, size 5000, sort: UNSORTED]
+21:35:04.767 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.767 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.835 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.835 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.835 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.835 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.835 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.836 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.836 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.836 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 72, size 5000, sort: UNSORTED]
+21:35:04.836 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.836 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.908 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.908 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.909 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.909 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.909 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.909 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.909 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.909 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 73, size 5000, sort: UNSORTED]
+21:35:04.910 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.910 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:04.978 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:04.978 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:04.979 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:04.979 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:04.979 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:04.979 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:04.979 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:04.979 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 74, size 5000, sort: UNSORTED]
+21:35:04.980 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:04.980 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.050 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.050 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.050 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.050 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.050 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.050 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 75, size 5000, sort: UNSORTED]
+21:35:05.050 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.050 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.124 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.124 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.125 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.125 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.125 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.125 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.125 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.125 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 76, size 5000, sort: UNSORTED]
+21:35:05.125 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.125 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.200 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.200 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.201 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.201 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.201 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.201 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.201 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.201 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 77, size 5000, sort: UNSORTED]
+21:35:05.201 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.201 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.276 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.276 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.277 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.277 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.277 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.277 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.277 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.277 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 78, size 5000, sort: UNSORTED]
+21:35:05.278 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.278 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.352 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.352 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.353 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.353 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.353 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.353 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.353 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.353 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 79, size 5000, sort: UNSORTED]
+21:35:05.353 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.353 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.428 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.428 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.429 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.429 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.429 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.429 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.429 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.429 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 80, size 5000, sort: UNSORTED]
+21:35:05.429 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.430 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.510 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.510 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.511 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.511 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.511 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.511 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.511 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.511 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 81, size 5000, sort: UNSORTED]
+21:35:05.511 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.511 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.588 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.588 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.588 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.588 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.588 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.588 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.588 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.588 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 82, size 5000, sort: UNSORTED]
+21:35:05.589 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.589 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.666 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.666 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.667 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.667 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.667 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED...
+21:35:05.667 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+21:35:05.667 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Suspending current transaction
+21:35:05.667 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles with transaction NOT_SUPPORTED by Page request [number: 83, size 5000, sort: UNSORTED]
+21:35:05.667 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Opening JPA EntityManager
+21:35:05.667 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Registering transaction synchronization for JPA EntityManager
+21:35:05.747 [main] INFO  b.c.hibernate.service.ProfileService - Profiles found
+21:35:05.747 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.748 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Resuming suspended transaction after completion of inner transaction
+21:35:05.748 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating with transaction propagation NOT_SUPPORTED done
+21:35:05.748 [main] INFO  b.c.h.workflow.ProfilePaginator - Total [ pages = 84; profiles = 418177 ]
+21:35:05.748 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+21:35:05.748 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+21:35:05.748 [main] DEBUG o.s.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] after transaction
+21:35:05.748 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+21:35:05.749 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@654f0d9c: startup date [Mon Jun 04 21:34:59 BRT 2018]; root of context hierarchy
+21:35:05.751 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+21:35:05.751 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+21:35:05.753 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:35:05.753 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:35:05.757 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

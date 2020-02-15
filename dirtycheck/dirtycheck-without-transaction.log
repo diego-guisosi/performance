@@ -1,0 +1,542 @@
+22:24:44.142 [main] INFO  br.com.hibernate.Main - Starting Main on dixy-Inspiron-15-7000-Gaming with PID 6987 (/home/dixy/workspace/sts-3.9.2.RELEASE/dirtycheck/target/classes started by dixy in /home/dixy/workspace/sts-3.9.2.RELEASE/dirtycheck)
+22:24:44.145 [main] INFO  br.com.hibernate.Main - No active profile set, falling back to default profiles: default
+22:24:44.175 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@67a20f67: startup date [Tue May 29 22:24:44 BRT 2018]; root of context hierarchy
+22:24:44.927 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:24:44.929 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=org.apache.derby.jdbc.ClientDriver was not found, trying direct instantiation.
+22:24:45.039 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: getNetworkTimeout.)
+22:24:45.063 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:24:45.094 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+22:24:45.110 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:24:45.170 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+22:24:45.172 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:24:45.203 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22:24:45.304 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+22:24:45.677 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:24:45.780 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:45.830 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:45.831 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:45.832 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:45.851 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:45.851 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:45.874 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:45.875 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:45.896 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:45.899 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:45.909 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+22:24:46.152 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:24:46.153 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+22:24:46.156 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+22:24:46.169 [main] INFO  br.com.hibernate.Main - Started Main in 2.217 seconds (JVM running for 2.876)
+22:24:46.170 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.171 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 0, size 5000, sort: UNSORTED]
+22:24:46.178 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.315 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.319 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.319 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.319 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.319 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 1, size 5000, sort: UNSORTED]
+22:24:46.320 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.365 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.368 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.368 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.368 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.368 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 2, size 5000, sort: UNSORTED]
+22:24:46.368 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.397 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.399 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.399 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.399 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.399 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 3, size 5000, sort: UNSORTED]
+22:24:46.399 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.423 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.426 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.426 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.426 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.426 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 4, size 5000, sort: UNSORTED]
+22:24:46.426 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.451 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.453 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.453 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.453 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.453 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 5, size 5000, sort: UNSORTED]
+22:24:46.453 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.478 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.480 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.480 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.480 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.480 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 6, size 5000, sort: UNSORTED]
+22:24:46.481 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.512 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.515 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.515 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.515 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.515 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 7, size 5000, sort: UNSORTED]
+22:24:46.515 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.553 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.555 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.555 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.555 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.555 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 8, size 5000, sort: UNSORTED]
+22:24:46.556 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.595 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.597 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.597 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.597 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.597 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 9, size 5000, sort: UNSORTED]
+22:24:46.598 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.636 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.638 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.638 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.638 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.638 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 10, size 5000, sort: UNSORTED]
+22:24:46.639 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.675 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.678 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.678 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.678 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.678 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 11, size 5000, sort: UNSORTED]
+22:24:46.678 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.709 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.711 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.711 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.711 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.712 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 12, size 5000, sort: UNSORTED]
+22:24:46.712 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.746 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.748 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.749 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.749 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.749 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 13, size 5000, sort: UNSORTED]
+22:24:46.749 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.787 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.788 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.789 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.789 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.789 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 14, size 5000, sort: UNSORTED]
+22:24:46.789 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.822 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.823 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.823 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.823 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.823 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 15, size 5000, sort: UNSORTED]
+22:24:46.824 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.848 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.850 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.850 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.850 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.850 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 16, size 5000, sort: UNSORTED]
+22:24:46.851 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.884 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.885 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.885 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.885 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.885 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 17, size 5000, sort: UNSORTED]
+22:24:46.886 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.909 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.910 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.910 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.910 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.910 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 18, size 5000, sort: UNSORTED]
+22:24:46.910 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.933 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.934 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.934 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.934 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.934 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 19, size 5000, sort: UNSORTED]
+22:24:46.934 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.958 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.959 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.959 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.959 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.959 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 20, size 5000, sort: UNSORTED]
+22:24:46.959 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:46.984 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:46.986 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:46.986 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:46.986 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:46.986 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 21, size 5000, sort: UNSORTED]
+22:24:46.986 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.019 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.020 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.020 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.020 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.020 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 22, size 5000, sort: UNSORTED]
+22:24:47.020 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.059 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.060 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.060 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.060 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.060 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 23, size 5000, sort: UNSORTED]
+22:24:47.060 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.092 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.093 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.093 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.093 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.093 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 24, size 5000, sort: UNSORTED]
+22:24:47.093 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.125 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.127 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.127 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.127 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.127 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 25, size 5000, sort: UNSORTED]
+22:24:47.127 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.160 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.160 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.160 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.161 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.161 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 26, size 5000, sort: UNSORTED]
+22:24:47.161 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.194 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.195 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.195 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.195 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.195 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 27, size 5000, sort: UNSORTED]
+22:24:47.195 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.233 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.234 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.234 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.234 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.234 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 28, size 5000, sort: UNSORTED]
+22:24:47.234 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.269 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.270 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.270 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.270 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.270 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 29, size 5000, sort: UNSORTED]
+22:24:47.270 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.307 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.308 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.308 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.308 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.308 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 30, size 5000, sort: UNSORTED]
+22:24:47.308 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.347 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.348 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.348 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.348 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.348 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 31, size 5000, sort: UNSORTED]
+22:24:47.348 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.392 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.393 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.393 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.393 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.393 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 32, size 5000, sort: UNSORTED]
+22:24:47.393 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.434 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.435 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.435 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.435 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.435 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 33, size 5000, sort: UNSORTED]
+22:24:47.436 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.477 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.478 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.478 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.478 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.478 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 34, size 5000, sort: UNSORTED]
+22:24:47.479 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.520 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.521 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.521 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.521 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.521 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 35, size 5000, sort: UNSORTED]
+22:24:47.521 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.563 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.564 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.564 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.564 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.564 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 36, size 5000, sort: UNSORTED]
+22:24:47.565 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.611 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.611 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.611 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.611 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.612 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 37, size 5000, sort: UNSORTED]
+22:24:47.612 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.656 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.657 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.657 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.657 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.657 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 38, size 5000, sort: UNSORTED]
+22:24:47.657 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.703 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.704 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.704 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.704 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.704 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 39, size 5000, sort: UNSORTED]
+22:24:47.704 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.748 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.749 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.749 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.749 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.749 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 40, size 5000, sort: UNSORTED]
+22:24:47.749 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.794 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.795 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.795 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.795 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.795 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 41, size 5000, sort: UNSORTED]
+22:24:47.795 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.840 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.841 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.841 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.841 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.841 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 42, size 5000, sort: UNSORTED]
+22:24:47.841 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.888 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.889 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.889 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.889 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.889 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 43, size 5000, sort: UNSORTED]
+22:24:47.889 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.935 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.936 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.936 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.936 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.936 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 44, size 5000, sort: UNSORTED]
+22:24:47.936 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:47.987 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:47.987 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:47.987 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:47.987 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:47.988 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 45, size 5000, sort: UNSORTED]
+22:24:47.988 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.037 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.037 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.037 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.038 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.038 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 46, size 5000, sort: UNSORTED]
+22:24:48.038 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.089 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.090 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.090 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.090 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.090 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 47, size 5000, sort: UNSORTED]
+22:24:48.090 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.142 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.143 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.143 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.143 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.143 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 48, size 5000, sort: UNSORTED]
+22:24:48.143 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.193 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.193 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.193 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.193 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.193 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 49, size 5000, sort: UNSORTED]
+22:24:48.194 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.247 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.247 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.247 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.247 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.247 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 50, size 5000, sort: UNSORTED]
+22:24:48.248 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.300 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.300 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.300 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.301 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.301 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 51, size 5000, sort: UNSORTED]
+22:24:48.301 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.354 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.354 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.354 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.354 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.354 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 52, size 5000, sort: UNSORTED]
+22:24:48.355 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.407 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.408 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.408 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.408 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.408 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 53, size 5000, sort: UNSORTED]
+22:24:48.408 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.462 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.463 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.463 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.463 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.463 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 54, size 5000, sort: UNSORTED]
+22:24:48.463 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.521 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.522 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.522 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.522 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.522 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 55, size 5000, sort: UNSORTED]
+22:24:48.522 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.578 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.579 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.579 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.579 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.579 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 56, size 5000, sort: UNSORTED]
+22:24:48.579 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.636 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.637 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.637 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.637 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.637 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 57, size 5000, sort: UNSORTED]
+22:24:48.637 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.694 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.695 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.695 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.695 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.695 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 58, size 5000, sort: UNSORTED]
+22:24:48.695 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.757 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.758 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.758 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.758 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.758 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 59, size 5000, sort: UNSORTED]
+22:24:48.759 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.819 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.820 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.820 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.820 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.820 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 60, size 5000, sort: UNSORTED]
+22:24:48.820 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.880 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.881 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.881 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.881 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.881 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 61, size 5000, sort: UNSORTED]
+22:24:48.881 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:48.941 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:48.941 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:48.941 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:48.941 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:48.941 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 62, size 5000, sort: UNSORTED]
+22:24:48.942 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.007 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.007 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.008 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.008 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.008 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 63, size 5000, sort: UNSORTED]
+22:24:49.008 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.077 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.077 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.078 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.078 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.078 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 64, size 5000, sort: UNSORTED]
+22:24:49.078 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.141 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.142 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.142 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.142 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.142 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 65, size 5000, sort: UNSORTED]
+22:24:49.142 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.206 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.206 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.206 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.206 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.206 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 66, size 5000, sort: UNSORTED]
+22:24:49.206 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.271 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.272 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.272 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.272 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.272 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 67, size 5000, sort: UNSORTED]
+22:24:49.272 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.340 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.341 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.341 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.341 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.341 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 68, size 5000, sort: UNSORTED]
+22:24:49.341 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.409 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.409 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.410 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.410 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.410 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 69, size 5000, sort: UNSORTED]
+22:24:49.410 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.476 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.476 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.476 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.476 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.476 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 70, size 5000, sort: UNSORTED]
+22:24:49.477 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.545 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.545 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.545 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.545 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.545 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 71, size 5000, sort: UNSORTED]
+22:24:49.546 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.613 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.614 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.614 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.614 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.614 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 72, size 5000, sort: UNSORTED]
+22:24:49.615 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.689 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.690 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.690 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.690 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.690 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 73, size 5000, sort: UNSORTED]
+22:24:49.690 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.761 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.762 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.762 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.762 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.762 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 74, size 5000, sort: UNSORTED]
+22:24:49.762 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.833 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.833 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.833 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.833 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.833 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 75, size 5000, sort: UNSORTED]
+22:24:49.834 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.906 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.906 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.906 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.906 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.906 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 76, size 5000, sort: UNSORTED]
+22:24:49.907 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:49.979 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:49.979 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:49.979 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:49.979 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:49.980 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 77, size 5000, sort: UNSORTED]
+22:24:49.980 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.059 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.060 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.060 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.060 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.060 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 78, size 5000, sort: UNSORTED]
+22:24:50.060 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.140 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.141 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.141 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.141 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.141 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 79, size 5000, sort: UNSORTED]
+22:24:50.141 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.220 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.221 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.221 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.221 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.221 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 80, size 5000, sort: UNSORTED]
+22:24:50.221 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.298 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.299 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.299 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.299 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.299 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 81, size 5000, sort: UNSORTED]
+22:24:50.300 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.382 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.383 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.383 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.383 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.383 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 82, size 5000, sort: UNSORTED]
+22:24:50.383 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.463 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.464 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.464 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.464 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction...
+22:24:50.464 [main] INFO  b.c.hibernate.service.ProfileService - Finding profiles without transaction by Page request [number: 83, size 5000, sort: UNSORTED]
+22:24:50.464 [main] DEBUG o.s.o.j.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler - Creating new EntityManager for shared EntityManager invocation
+22:24:50.541 [main] DEBUG o.s.o.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+22:24:50.541 [main] INFO  b.c.hibernate.service.ProfileService - Page of profiles found
+22:24:50.541 [main] INFO  b.c.h.workflow.ProfilePaginator - Paginating without transaction done
+22:24:50.542 [main] INFO  b.c.h.workflow.ProfilePaginator - Total [ pages = 84; profiles = 418177 ]
+22:24:50.542 [Thread-4] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@67a20f67: startup date [Tue May 29 22:24:44 BRT 2018]; root of context hierarchy
+22:24:50.544 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+22:24:50.545 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+22:24:50.546 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:24:50.547 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:24:50.558 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
